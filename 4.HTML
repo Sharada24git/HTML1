@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selection</title>
+    <style>
+        .bus{
+            border: 5px solid gray;
+            padding: 10px;
+            height: 700px;
+     	    width: 300px;
+        }
+
+        
+        
+        .gap{
+            width: 10px;
+        }
+
+        pre{
+            font-family: sans-serif;
+        }
+
+        .indicators td{
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table class="indicators">
+        <tr>
+            <td><img src="seat1.svg"></td>
+            <td><img src="seat2.svg"></td>
+            <td><img src="seat3.svg"></td>
+        </tr>
+        <tr>
+            <td>Available</td>
+            <td>Selected</td>
+            <td>Not Available</td>
+        </tr>
+    </table>
+    <br>
+    <table class="bus">
+        <tr>
+            <td></td>
+            <td class="gap"></td>
+            <td class="gap">    </td>
+            <td class="gap">    </td>
+            <td class="gap">    </td>
+            <td>    </td>
+            <td><img src="steeringwheel.svg" alt="" width="40"></td>
+        </tr>
+        <tr>
+            <td><img src="seat3.svg"></td>
+	        <td class="gap"></td>
+	        <td class="gap"></td>
+	        <td class="gap"></td>
+	        <td class="gap"></td>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td><img src="seat3.svg"></td>
+        </tr>
+        <tr>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td class="gap">      </td>
+            <td class="gap">      </td>
+            <td class="gap">      </td>
+            <td class="gap">      </td>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td><img src="seat1.svg" class="seat"></td>
+         </tr>
+        <tr>
+            <td><img src="seat1.svg" class="seat"></td>
+	        <td class="gap"></td>
+	        <td class="gap"></td>
+	        <td class="gap"></td>
+	        <td class="gap"></td>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td><img src="seat1.svg" class="seat"></td>
+         </tr>
+        <tr>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td class="gap">      </td>
+            <td class="gap">      </td>
+            <td class="gap">      </td>
+            <td class="gap">      </td>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td><img src="seat1.svg" class="seat"></td>
+         </tr>
+        <tr>
+            <td><img src="seat1.svg" class="seat"></td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td><img src="seat1.svg" class="seat"></td>
+         </tr>
+        <tr>
+            <td><img src="seat1.svg" class="seat"></td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td><img src="seat1.svg" class="seat"></td>
+         </tr>
+        <tr>
+            <td><img src="seat1.svg" class="seat"></td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+	    <td class="gap">      </td>
+            <td><img src="seat1.svg" class="seat"></td>
+            <td><img src="seat1.svg" class="seat"></td>
+         </tr>
+
+    </table>    
+    <script>
+    let seats = document.getElementsByClassName("seat");
+    for (let seat of seats) {
+        seat.onclick = function () {
+            if (this.getAttribute("src") === "seat1.svg") {
+
+                this.setAttribute("src", "seat2.svg");
+
+            } else if (this.getAttribute("src") === "seat2.svg") {
+
+                this.setAttribute("src", "seat1.svg");
+
+            }
+        }
+    }
+    </script>
+
+</body>
+</html>
