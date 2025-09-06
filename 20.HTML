@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog</title>
+    <style>
+        body{
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8;
+        /* Light background for the entire page */
+        }
+
+        header{
+            background-color: #6a1b9a;
+        /* Vibrant purple header */
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header nav ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li{
+            display: inline;
+            margin: 0 15px;
+        }
+        header nav ul li a{
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main{
+            margin: 20px;
+            background-color: #ffffff;
+        /* White background for the main content */
+            padding: 20px;
+            border-radius: 8px; /*
+        Rounded corners for the main content area */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle
+        shadow for depth */
+        }
+
+        article{
+            margin-bottom: 40px;
+            marker-end: none;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eeeeee;/* Separator for 
+        articles */
+        }
+
+        article h2{
+            color: #333333; /* Dark text for titles */
+            margin-bottom: 10px;
+        }
+
+        article p{
+            color: #666666; /* Lighter text for the body */
+            line-height: 1.6; /*improved readability */
+        }
+
+        footer{
+            background-color: #6a1b9a;
+        /* Matching the header's vibrant purple */
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Blog Post Title</h2>
+            <p>Contact of the first blog past...</p>
+        </article>
+        <article>
+        <h2>Another blog post</h2>
+        <p>Content of the second blog post...</p>
+        </article>
+        <!-- More articles can be added here -->
+    </main>
+    <footer>
+        <p>2023 My Simple Blog</p>
+    </footer>
+</body>
+</html>
