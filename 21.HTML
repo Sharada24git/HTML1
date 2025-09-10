@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Amount</title>
+    <style>
+        body{
+            background-color: rgb(219, 216, 216);
+            height: 500px;
+            width: 1000px;      
+        }
+        .Loan{
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            height: 350px;
+            width: 450px;
+        }
+        .pie-chart{
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <div class="Loan">
+        <h3>Loan Amount</h3>
+        <lable class="slider">
+        <input type="range" min="0" max="100" value="10">
+        <input type="button" value="30,00,000" onclick="3000000">
+        <br>
+        <h3>Interest Rate</h3>
+        <lable class="slider">
+        <input type="range" min="0" max="100" value="15">
+        <input type="button" value="6.90" onclick="690"> p.a
+        <br>
+        <h3>Loan Term</h3>
+        <lable class="slider">
+        <input type="range" min="0" max="100" value="80">
+        <input type="button" value="20"Years onclick="3000000"> Years
+        <br>
+        <h2>Monthly EMI: Rs.23,079.23</h2>
+        </div>
+    </table>
+    <table>
+        <div style="color:brown"><b><h2>Breakup of Total Payment:</h2></b></div>
+        <div class="pie-chart"></div>
+        <h3>Principal            :         Rs. 30,00,000</h3>
+        <h3>Interest Payable     :         Rs. 25,39,016</h3>
+        <h3>Total Amount Payable :         Rs. 55,39,016.1</h3>
+        <button input type="Apply" style="background-color: Orange; height: 40px; width: 100px;">Apply Now</button>
+    </table>
+</body>
+</html>
